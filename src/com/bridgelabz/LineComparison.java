@@ -29,9 +29,19 @@ public class LineComparison {
     }
     public static void main(String[] args) {
 
-        LineComparison l = new LineComparison();
-        l.getData();
-        float ans = l.getSqrt();
-        System.out.println("Length of a line is "+ans);
+        LineComparison lineComparison1 = new LineComparison();
+        lineComparison1.getData();
+        float firstLineLength = lineComparison1.getSqrt();
+        System.out.println("Length of a line is "+firstLineLength);
+        LineComparison lineComparison2 = new LineComparison();
+        lineComparison2.getData();
+        float secondLineLength = lineComparison2.getSqrt();
+        System.out.println("Length of a line is "+secondLineLength);
+        if(firstLineLength == secondLineLength){
+            System.out.println("Both Lines are equal.");
+        }
+        else {
+            System.out.println("Both Lines are not equal.");
+        }
     }
 }
